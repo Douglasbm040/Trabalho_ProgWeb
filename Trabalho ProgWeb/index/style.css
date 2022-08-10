@@ -1,0 +1,48 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  overflow: hidden;
+  background-color: rgb(77, 117, 140);
+}
+
+.main{
+  position: absolute;
+  top: 0px;
+  background-color: #fff 10%;
+  border: 2px solid #fff 30%;
+  backdrop-filter: blur(20px);
+  width: 900px;
+  height: 500px;
+  margin-top: 8%;
+  margin-left: 20%;
+}
+
+h1{
+  text-align: center;
+  color: #fff;
+  margin-top: 5%;
+  font-size: 50px;
+}
+
+img{
+  width: 300px;
+  margin-left: 32%;
+  margin-top: 3%;
+}
+
+p{
+  margin: auto;
+  margin-top: 3%;
+  width: 100%;
+  text-align: center;
+  color: #fff;
+}
+
+video{
+  width: 100%;
+}
