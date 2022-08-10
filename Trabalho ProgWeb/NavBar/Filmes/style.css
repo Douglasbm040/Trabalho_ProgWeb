@@ -1,0 +1,137 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body{
+  background-color: #031114;
+}
+
+a{
+  text-decoration: none;
+}
+
+/*BARRA DE NAVEGAÇÃO*/
+
+header{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 100px;
+  z-index: 100;
+}
+
+#men{
+  display: none;
+}
+
+header .logo img{
+  max-width: 250px;
+}
+
+.navbar{
+  display: flex;
+}
+
+.navbar li{
+  list-style: none;
+  margin: 0 10px;
+}
+
+.navbar li a{
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+  letter-spacing: 1px;
+}
+
+.navbar li a:hover{
+  color: #135156;
+}
+
+input{
+  background-color: transparent;
+  border: 1px solid #fff;
+  color: #fff;
+  border-radius: 4px;
+  height: 30px;
+  padding: 10px;
+}
+
+/*MENU*/
+
+.container{
+  width: 80%;
+  margin-left: auto;
+  margin-top: 100px;
+}
+
+.container img{
+  max-width: 300px;
+  padding: 10px;
+}
+
+.container img:hover{
+  max-width: 302px;
+  z-index: 2;
+  transform: scale(1.1);
+}
+
+@media (max-width:1111px) {
+  header{
+    position: fixed;
+    background-color: #010809;
+    height: 80px;
+  }
+
+  header .logo img{
+    position: relative;
+    right: 70px;
+  }
+
+  .pesquisa{
+    display: none;
+  }
+
+  #men {
+    display: block;
+    position: fixed;
+    top: 20px;
+    right: 30px;
+    float: right;
+  }
+
+  #men:hover {
+    opacity: 1;
+    position: fixed;
+    top: 20px;
+    right: 30px;
+  }
+
+  .navbar{
+    display: list-item;
+    position: absolute;
+   /* background-color: #073038;*/
+    width: 100%;
+    text-align: center;
+    right: -1px;
+    top: -160px;
+  }
+
+  .navbar li{
+    background-color: #051d22;
+    padding: 10px;
+  }
+
+  .navbar:hover{
+    position: absolute;
+    top: 68px;
+  }
+
+}
