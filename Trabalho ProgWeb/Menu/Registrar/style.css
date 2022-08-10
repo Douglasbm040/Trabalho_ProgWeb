@@ -1,0 +1,150 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body {
+  /*background-image: url('imagens/fundo.jpg');*/
+  background: linear-gradient(45deg, #020c0e, #09383f);
+  overflow: hidden;
+}
+
+.box {
+  width: 500px;
+  margin-left: 10%;
+  margin-top: 60px;
+  float: left;
+}
+
+h1 {
+  font-size: 50px;
+  margin-bottom: 10px;
+  color: #fff;
+}
+
+label {
+  color: #fff;
+  margin-top: 10px;
+}
+
+form .text {
+  background-color: transparent;
+  border: 1px solid #fff;
+  border-radius: 4px;
+  margin-top: 10px;
+  width: 500px;
+  height: 35px;
+  color: #fff;
+  padding: 10px;
+}
+
+.li {
+  position: relative;
+  bottom: 20px;
+  left: 64px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.li img {
+  position: relative;
+  top: 100px;
+  right: 90px;
+}
+
+button {
+  background-color: transparent;
+  border: 2px solid #fff;
+  border-radius: 4px;
+  width: 150px;
+  height: 50px;
+  font-size: 20px;
+  padding: 5px;
+  color: #fff;
+  position: relative;
+  top: 120px;
+  left: 175px;
+}
+
+button:hover {
+  background-color: #fff;
+  color: #09383f;
+}
+
+img {
+  max-width: 500px;
+  float: right;
+  position: absolute;
+  bottom: 150px;
+  right: 10%;
+}
+
+.box2 {
+  float: left;
+  width: 500px;
+  margin-left: 200px;
+  margin-top: 50px;
+}
+
+.text2 {
+  background-color: #09383f;
+  border: 1px solid #fff;
+  border-radius: 4px;
+  margin-top: 10px;
+  width: 300px;
+  height: 40px;
+  color: white;
+  padding: 10px;
+}
+
+.text3 {
+  background-color: #09383f;
+  border: 1px solid #fff;
+  border-radius: 4px;
+  margin-top: 10px;
+  width: 100px;
+  height: 40px;
+  color: white;
+  padding: 10px;
+}
+
+@media (max-width: 1300px) {
+  body {
+    overflow-y: scroll;
+    overflow-x: hidden;
+  }
+
+  #lad {
+    display: none;
+  }
+
+  .box {
+    margin-left: 12px;
+    width: 490px;
+  }
+
+  form .text {
+    width: 380px;
+  }
+
+  .box2 {
+    margin-left: 12px;
+    margin-top: 90px;
+    width: 490px;
+    height: 800px;
+  }
+
+  #but {
+    position: absolute;
+    top: 1200px;
+  }
+}
+
+@media (min-width: 1027px) and (max-width: 1301px) {
+  #but {
+    position: absolute;
+    top: 630px;
+  }
+}

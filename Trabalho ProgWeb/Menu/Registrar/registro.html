@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <title>Registre-se</title>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link rel="shortcut icon" href="imagens/fav.png" type="image/x-icon" />
+  </head>
+
+  <body>
+    <div id="formulario">
+      <form action="../Registrar/envio.html" method="get">
+        <div class="box">
+          <h1>Registrar-se</h1>
+
+          <label>Nome:</label>
+          <input
+            class="text"
+            type="text"
+            name="nome"
+            pattern="([aA-zZ]+)"
+            title="somentes letras"
+            placeholder="Nome Completo"
+          /><br /><br />
+
+          <label>E-mail:</label>
+          <input
+            class="text"
+            type="email"
+            name="email"
+            pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
+            placeholder="user@dominio.com"
+          /><br /><br />
+
+          <label>Senha:</label>
+          <input
+            class="text"
+            type="password"
+            name="senha"
+            pattern="^(?=.*[A-Z])(?=.*[!#@$%&])(?=.*[0-9])(?=.*[a-z]).{6,15}$"
+            title="Deve conter no minimo  uma letra maiuscula, uma minuscula, um caracter especial e 6 caracteres e no maximo 15 caracteres"
+          /><br /><br />
+
+          <label>Confirme a Senha:</label>
+          <input
+            class="text"
+            type="password"
+            name="tel"
+            pattern="^(?=.*[A-Z])(?=.*[!#@$%&])(?=.*[0-9])(?=.*[a-z]).{6,15}$"
+            title="Deve conter no minimo  uma letra maiuscula, uma minuscula, um caracter especial e 6 caracteres e no maximo 15 caracteres"
+          /><br /><br />
+
+          <div class="li">
+            <input class="check" type="radio" name="plano1" />
+            <img src="imagens/plano1.png" />
+
+            <input class="check" type="radio" name="plano2" />
+            <img src="imagens/plano2.png" />
+
+            <input class="check" type="radio" name="plano3" />
+            <img src="imagens/plano3.png" />
+          </div>
+
+          <button type="submit" id="but">Registrar-se</button>
+        </div>
+
+        <!--<img id="lad" src="imagens/lado.png">-->
+
+        <div class="box2">
+          <label>Endereço:</label>
+          <input
+            type="text"
+            name="endereco"
+            pattern="[A-Za-z ]+"
+            class="text2"
+            title="É necessario que seja no padrao  exemplo (rua) "
+            placeholder="Rua Nome da Rua"
+          />
+
+          <input type="number" name="number" class="text3" placeholder="N°" />
+          <br /><br />
+
+          <label>CEP:</label>
+          <input
+            type="text"
+            name="cep"
+            pattern="\d{5}[-]\d{3}"
+            title="É necessário que seja no padrão 0000-000"
+            class="text"
+            placeholder="0000-000"
+          /><br /><br />
+
+          <label>Cidade:</label>
+          <input
+            type="text"
+            name="cidade"
+            pattern="[A-Za-z{3,}\s]"
+            class="text"
+          /><br /><br />
+
+          <label>Estado:</label>
+          <select id="estado" name="estado" class="text2">
+            <option value="AC">Acre</option>
+            <option value="AL">Alagoas</option>
+            <option value="AP">Amapá</option>
+            <option value="AM">Amazonas</option>
+            <option value="BA">Bahia</option>
+            <option value="CE">Ceará</option>
+            <option value="DF">Distrito Federal</option>
+            <option value="ES">Espírito Santo</option>
+            <option value="GO">Goiás</option>
+            <option value="MA">Maranhão</option>
+            <option value="MT">Mato Grosso</option>
+            <option value="MS">Mato Grosso do Sul</option>
+            <option value="MG">Minas Gerais</option>
+            <option value="PA">Pará</option>
+            <option value="PB">Paraíba</option>
+            <option value="PR">Paraná</option>
+            <option value="PE">Pernambuco</option>
+            <option value="PI">Piauí</option>
+            <option value="RJ">Rio de Janeiro</option>
+            <option value="RN">Rio Grande do Norte</option>
+            <option value="RS">Rio Grande do Sul</option>
+            <option value="RO">Rondônia</option>
+            <option value="RR">Roraima</option>
+            <option value="SC">Santa Catarina</option>
+            <option value="SP">São Paulo</option>
+            <option value="SE">Sergipe</option>
+            <option value="TO">Tocantins</option>
+            <option value="EX">Estrangeiro</option></select
+          ><br /><br />
+
+          <label>Telefone:</label>
+          <input
+            type="text"
+            name="telefone"
+            class="text"
+            pattern="\(\d{2}\)\d{5}[-]\d{4}"
+            title="É necessário manter o padrão do telefone como (XX)XXXXX-XXXX"
+            placeholder="(XX)XXXXX-XXXX"
+          /><br /><br />
+
+          <label>Profissão:</label>
+          <input type="text" name="profissao" class="text" /><br /><br />
+
+          <label>Data de Nascimento:</label>
+          <input
+            type="text"
+            name="data"
+            class="text"
+            pattern="(0[1-9]|[12][0-9]|3[01])[- \/.](0[1-9]|1[012])[- \/.](19\d{2}|200\d|201\d)"
+            title="É necessario manter o padrao dia/mes/ano exemplo 01/02/2022"
+            placeholder="DD/MM/AAAA"
+          /><br /><br />
+
+          <label>Estado Civil:</label>
+          <select name="estadocivil" class="text2">
+            <option value="1">Solteiro(a)</option>
+            <option value="2">Casado(a)</option>
+            <option value="3">Separado(a)</option>
+            <option value="4">Divorciado(a)</option>
+            <option value="5">Viúvo(a)</option></select
+          ><br /><br />
+
+          <label>Sexo:</label>
+
+          <input type="radio" name="sex" /><label>Masculino</label>
+
+          <input type="radio" name="sex" /><label>Feminino</label>
+
+          <br /><br /><br />
+
+          <br />
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
